@@ -6,6 +6,9 @@
   <meta name="theme-color" content="#ffffff">
   <title>말로만들DOT</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="adult-flow.css">
+  <link rel="stylesheet" href="adult-home.css">
+  <link rel="stylesheet" href="adult-review.css">
   <script src="app.js" defer></script>
 </head>
 <body>
@@ -23,6 +26,350 @@
       </div>
     </main>
   </section>
+<section id="adult-home" class="adult-screen" aria-label="말로만들DOT 홈" hidden>
+  <header class="adult-home-header">
+    <div class="adult-home-logo">말로만들<span>DOT</span><b>●</b></div>
+    <button class="home-settings" type="button" aria-label="기기 설정"><span aria-hidden="true"><!-- @license lucide-static v0.468.0 - ISC -->
+<svg
+  class="lucide lucide-settings-2"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M20 7h-9" />
+  <path d="M14 17H5" />
+  <circle cx="17" cy="17" r="3" />
+  <circle cx="7" cy="7" r="3" />
+</svg></span></button>
+  </header>
+  <main class="adult-home-main">
+    <div class="adult-home-top"><span>MAKE IT REAL</span><span>01 — 03</span></div>
+    <h1>오늘은 무엇을<br>만들어볼까요<span>.</span></h1>
+    <p class="adult-home-subtitle">떠오른 생각을 차근차근 만들어봐요.</p>
+    <section class="adult-home-feature" aria-label="새 프로젝트 만들기">
+      <div class="adult-feature-top"><span>NEW PROJECT</span><span aria-hidden="true">↗</span></div>
+      <div class="adult-feature-middle">
+        <div><h2>아이디어를<br>현실로!</h2><p>말로 설명하면<br>하나씩 함께 만들 수 있어요.</p></div>
+        <div class="adult-circuit" aria-hidden="true">
+          <div class="adult-circuit-chip"><!-- @license lucide-static v0.468.0 - ISC -->
+<svg
+  class="lucide lucide-cpu"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <rect width="16" height="16" x="4" y="4" rx="2" />
+  <rect width="6" height="6" x="9" y="9" rx="1" />
+  <path d="M15 2v2" />
+  <path d="M15 20v2" />
+  <path d="M2 15h2" />
+  <path d="M2 9h2" />
+  <path d="M20 15h2" />
+  <path d="M20 9h2" />
+  <path d="M9 2v2" />
+  <path d="M9 20v2" />
+</svg></div><span class="adult-circuit-wire"></span>
+          <div class="adult-circuit-light"><!-- @license lucide-static v0.468.0 - ISC -->
+<svg
+  class="lucide lucide-lightbulb"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" />
+  <path d="M9 18h6" />
+  <path d="M10 22h4" />
+</svg></div><span class="adult-circuit-dot"></span>
+        </div>
+      </div>
+      <button class="home-start" type="button"><span>새 프로젝트 만들기</span><span aria-hidden="true">→</span></button>
+    </section>
+    <div class="adult-home-section-head">
+      <div><span>HOW IT WORKS</span><h2>이렇게 만들어요</h2></div><span>3 STEPS</span>
+    </div>
+    <div class="adult-home-steps" aria-label="만드는 순서">
+      <div><span>01</span><strong>설명하기</strong><small>아이디어를 말해요</small></div>
+      <div><span>02</span><strong>연결하기</strong><small>부품을 연결해요</small></div>
+      <div><span>03</span><strong>작동시키기</strong><small>직접 움직여봐요</small></div>
+    </div>
+  </main>
+  <p id="adult-home-status" role="status" aria-live="polite"></p>
+  <nav class="adult-home-nav" aria-label="메인 메뉴">
+    <button class="home-nav-home active" type="button" aria-current="page"><span class="adult-nav-icon" aria-hidden="true"><!-- @license lucide-static v0.468.0 - ISC -->
+<svg
+  class="lucide lucide-house"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+  <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+</svg></span><span>홈</span></button>
+    <button class="home-device" type="button"><span class="adult-nav-icon" aria-hidden="true"><!-- @license lucide-static v0.468.0 - ISC -->
+<svg
+  class="lucide lucide-tablet-smartphone"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <rect width="10" height="14" x="3" y="8" rx="2" />
+  <path d="M5 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2h-2.4" />
+  <path d="M8 18h.01" />
+</svg></span><span>기기</span></button>
+    <button class="home-nav-create" type="button"><span class="adult-nav-icon" aria-hidden="true"><!-- @license lucide-static v0.468.0 - ISC -->
+<svg
+  class="lucide lucide-circle-plus"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="12" cy="12" r="10" />
+  <path d="M8 12h8" />
+  <path d="M12 8v8" />
+</svg></span><span>만들기</span></button>
+    <button class="home-monitor" type="button"><span class="adult-nav-icon" aria-hidden="true"><!-- @license lucide-static v0.468.0 - ISC -->
+<svg
+  class="lucide lucide-activity"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2" />
+</svg></span><span>모니터링</span></button>
+  </nav>
+</section>
+
+<section id="adult-board" class="adult-screen" aria-labelledby="adult-board-title" hidden>
+  <header class="adult-header">
+    <button class="adult-back flow-back-board" type="button" aria-label="홈으로 돌아가기">←</button>
+    <div class="adult-brand">말로만들<span>DOT</span><b>●</b></div>
+    <span class="adult-header-space" aria-hidden="true"></span>
+  </header>
+  <div class="adult-progress">
+    <div><strong>보드 고르기</strong><span>1 / 5</span></div>
+    <div class="adult-track"><span style="width:20%"></span></div>
+  </div>
+  <main class="adult-main">
+    <div class="adult-eyebrow"><span>01</span> 시작하기</div>
+    <h1 id="adult-board-title">어떤 보드를<br>가지고 있나요?</h1>
+    <p class="adult-intro">보드에 적힌 이름과 같은 것을 골라주세요.</p>
+    <div class="board-choices" role="group" aria-label="보드 모델 선택">
+      <button class="board-choice" type="button" data-model="ESP32-S3 DevKitC-1" aria-pressed="false">
+        <span class="board-number">01</span><span class="board-name"><strong>ESP32-S3</strong><small>DevKitC-1</small></span><span class="board-radio" aria-hidden="true"></span>
+      </button>
+      <button class="board-choice" type="button" data-model="ESP32 DevKit V1" aria-pressed="false">
+        <span class="board-number">02</span><span class="board-name"><strong>ESP32</strong><small>DevKit V1</small></span><span class="board-radio" aria-hidden="true"></span>
+      </button>
+      <button class="board-choice" type="button" data-model="ESP32-C3 DevKitM-1" aria-pressed="false">
+        <span class="board-number">03</span><span class="board-name"><strong>ESP32-C3</strong><small>DevKitM-1</small></span><span class="board-radio" aria-hidden="true"></span>
+      </button>
+    </div>
+    <details class="adult-help">
+      <summary><span class="adult-help-icon" aria-hidden="true">?</span> 어떤 건지 모르겠어요 <span class="adult-help-chevron" aria-hidden="true">⌄</span></summary>
+      <p>보드 위에 적힌 모델 이름을 확인해 주세요. 찾기 어렵다면 구매 내역이나 보드 설명서를 살펴보세요.</p>
+    </details>
+    <div class="adult-bottom"><button class="adult-primary board-next" type="button" disabled>이 보드로 시작하기 <span aria-hidden="true">→</span></button></div>
+  </main>
+  <nav class="adult-nav" aria-label="주 메뉴">
+    <button type="button" data-adult-nav="home">홈</button><button type="button" data-adult-nav="board" aria-current="page">기기</button><button type="button" data-adult-nav="idea">만들기</button><button type="button" data-adult-nav="monitor">모니터링</button>
+  </nav>
+</section>
+
+<section id="adult-connect" class="adult-screen" aria-labelledby="adult-connect-title" hidden>
+  <header class="adult-header">
+    <button class="adult-back flow-back-connect" type="button" aria-label="보드 선택으로 돌아가기">←</button>
+    <div class="adult-brand">말로만들<span>DOT</span><b>●</b></div>
+    <span class="adult-header-space" aria-hidden="true"></span>
+  </header>
+  <div class="adult-progress">
+    <div><strong>보드 준비하기</strong><span>2 / 5</span></div>
+    <div class="adult-track"><span style="width:40%"></span></div>
+  </div>
+  <main class="adult-main">
+    <div class="adult-eyebrow"><span>02</span> 기기 준비</div>
+    <h1 id="adult-connect-title">보드를 연결해요</h1>
+    <p class="adult-intro">처음에는 USB 케이블로 보드와<br>컴퓨터를 연결해 주세요.</p>
+    <div class="connection-visual" aria-label="컴퓨터와 보드 연결 안내">
+      <div class="connection-device"><span>PC</span></div><div class="connection-line"><i></i><i></i><i></i><b>USB</b><i></i><i></i><i></i></div><div class="connection-device connection-board"><span>BOARD</span></div>
+    </div>
+    <div class="connection-info"><strong>처음 연결한다면?</strong><p>보드 설정이 필요할 수 있어요. 기기 설정은 추후 연결될 예정이에요.</p></div>
+    <div class="adult-selected"><span>선택한 보드</span><strong data-selected-board>선택한 보드</strong></div>
+    <details class="adult-help connect-fields">
+      <summary><span class="adult-help-icon" aria-hidden="true">i</span> 기기 정보 입력하기 <span class="adult-help-chevron" aria-hidden="true">⌄</span></summary>
+      <div class="connection-fields">
+        <label for="adult-device-name">기기 이름 <span>선택</span></label>
+        <input id="adult-device-name" type="text" autocomplete="off" placeholder="예) 나의 보드">
+        <label for="adult-device-ip">IP 주소 <span>선택</span></label>
+        <input id="adult-device-ip" type="text" inputmode="decimal" autocomplete="off" placeholder="예) 192.168.0.52">
+        <p>입력값은 이 화면의 시연용이며 실제 보드에 연결되지 않아요.</p>
+      </div>
+    </details>
+    <div class="adult-bottom">
+      <p class="adult-demo">시연 화면 · 실제 연결은 준비 중</p>
+      <button class="adult-primary connect-next" type="button">다음으로 <span aria-hidden="true">→</span></button>
+    </div>
+  </main>
+  <nav class="adult-nav" aria-label="주 메뉴">
+    <button type="button" data-adult-nav="home">홈</button><button type="button" data-adult-nav="board" aria-current="page">기기</button><button type="button" data-adult-nav="idea">만들기</button><button type="button" data-adult-nav="monitor">모니터링</button>
+  </nav>
+</section>
+
+<section id="adult-idea" class="adult-screen" aria-labelledby="adult-idea-title" hidden>
+  <header class="adult-header">
+    <button class="adult-back flow-back-idea" type="button" aria-label="보드 준비로 돌아가기">←</button>
+    <div class="adult-brand">말로만들<span>DOT</span><b>●</b></div>
+    <span class="adult-header-space" aria-hidden="true"></span>
+  </header>
+  <div class="adult-progress">
+    <div><strong>생각 말하기</strong><span>3 / 5</span></div>
+    <div class="adult-track"><span style="width:60%"></span></div>
+  </div>
+  <main class="adult-main">
+    <div class="adult-eyebrow"><span>03</span> 아이디어</div>
+    <h1 id="adult-idea-title">어떤 걸 만들고<br>싶나요?</h1>
+    <p class="adult-intro">생각나는 걸 편하게 적어주세요.<br>예시를 고른 후 바꾸어도 좋아요.</p>
+    <div class="idea-fields">
+      <label for="adult-project-title">프로젝트 이름 <span>선택</span></label>
+      <input id="adult-project-title" type="text" maxlength="80" placeholder="예) 나만의 무드등">
+      <label for="adult-idea-text">만들고 싶은 동작</label>
+      <textarea id="adult-idea-text" rows="4" placeholder="예) 어두워지면 불이 켜지는 무드등을 만들고 싶어요"></textarea>
+    </div>
+    <div class="adult-suggest-title">아직 생각이 안 난다면?</div>
+    <div class="adult-suggestions">
+      <button type="button" data-example="어두워지면 LED 불이 켜지게 해줘."><span class="adult-example-number">01</span><span>어두워지면 불 켜기</span><span aria-hidden="true">↗</span></button>
+      <button type="button" data-example="가까이 다가가면 소리가 나게 해줘."><span class="adult-example-number">02</span><span>가까이 가면 소리 내기</span><span aria-hidden="true">↗</span></button>
+    </div>
+    <div class="adult-bottom"><button class="adult-primary idea-next" type="button" disabled>이야기 이어가기 <span aria-hidden="true">→</span></button></div>
+  </main>
+  <nav class="adult-nav" aria-label="주 메뉴">
+    <button type="button" data-adult-nav="home">홈</button><button type="button" data-adult-nav="board">기기</button><button type="button" data-adult-nav="idea" aria-current="page">만들기</button><button type="button" data-adult-nav="monitor">모니터링</button>
+  </nav>
+</section>
+
+<section id="adult-clarify" class="adult-screen" aria-labelledby="adult-clarify-title" hidden>
+  <header class="adult-header">
+    <button type="button" class="adult-back clarify-back" aria-label="이전 화면으로">←</button>
+    <div class="adult-brand">말로만들<span>DOT</span><b>●</b></div>
+    <span class="adult-header-space" aria-hidden="true"></span>
+  </header>
+  <div class="adult-progress">
+    <div><strong>동작 구체화</strong><span>4 / 5</span></div>
+    <div class="adult-track"><span style="width:80%"></span></div>
+  </div>
+  <main class="adult-main ar-main">
+    <div class="adult-eyebrow"><span>04</span> 동작 구체화</div>
+    <div class="ar-title">
+      <h1 id="adult-clarify-title">어떻게 작동하면 될까요?</h1>
+      <p>만들고 싶은 기능이 시작되는 순간을 골라주세요.</p>
+    </div>
+    <div class="ar-idea-card">
+      <span>입력한 아이디어</span>
+      <p data-selected-idea></p>
+    </div>
+    <fieldset class="ar-options">
+      <legend>동작 조건 선택</legend>
+      <label class="ar-option">
+        <input type="radio" name="adult-trigger" value="버튼을 누르면">
+        <span class="ar-radio" aria-hidden="true"></span>
+        <span class="ar-option-copy"><strong>버튼을 누르면</strong><small>직접 누를 때 동작해요</small></span>
+      </label>
+      <label class="ar-option">
+        <input type="radio" name="adult-trigger" value="어두워지면">
+        <span class="ar-radio" aria-hidden="true"></span>
+        <span class="ar-option-copy"><strong>어두워지면</strong><small>주변 밝기를 기준으로 동작해요</small></span>
+      </label>
+      <label class="ar-option">
+        <input type="radio" name="adult-trigger" value="입력한 내용 그대로">
+        <span class="ar-radio" aria-hidden="true"></span>
+        <span class="ar-option-copy"><strong>입력한 내용 그대로</strong><small>이미 조건을 적었거나 따로 정하고 싶어요</small></span>
+      </label>
+    </fieldset>
+    <p class="ar-hint">실제 설계에는 알맞은 부품과 조건을 확인해야 해요.</p>
+  </main>
+  <footer class="ar-footer">
+    <button type="button" class="ar-primary clarify-next" disabled>선택한 내용 확인하기 <span aria-hidden="true">→</span></button>
+    <p class="ar-demo">화면 시연용 · 실제 분석은 연결되지 않았어요</p>
+  </footer>
+</section>
+
+<section id="adult-review" class="adult-screen" aria-labelledby="adult-review-title" hidden>
+  <header class="adult-header">
+    <button type="button" class="adult-back review-back" aria-label="이전 화면으로">←</button>
+    <div class="adult-brand">말로만들<span>DOT</span><b>●</b></div>
+    <span class="adult-header-space" aria-hidden="true"></span>
+  </header>
+  <div class="adult-progress">
+    <div><strong>요청 확인</strong><span>5 / 5</span></div>
+    <div class="adult-track"><span style="width:100%"></span></div>
+  </div>
+  <main class="adult-main ar-main">
+    <div class="adult-eyebrow"><span>05</span> 마지막 확인</div>
+    <div class="ar-title">
+      <h1 id="adult-review-title">이렇게 만들면 될까요?</h1>
+      <p>선택한 내용을 마지막으로 확인해주세요.</p>
+    </div>
+    <div class="ar-review-card">
+      <div class="ar-review-top">
+        <span class="ar-review-badge">내 만들기</span>
+        <strong data-selected-title></strong>
+      </div>
+      <dl>
+        <div><dt>보드</dt><dd data-selected-board></dd></div>
+        <div><dt>만들고 싶은 동작</dt><dd data-selected-idea></dd></div>
+        <div><dt>동작 조건</dt><dd data-selected-trigger></dd></div>
+      </dl>
+    </div>
+    <p class="ar-review-note">내용을 바꾸려면 이전 화면에서 다시 선택할 수 있어요.</p>
+  </main>
+  <footer class="ar-footer">
+    <p id="adult-review-status" class="ar-status" role="status" aria-live="polite"></p>
+    <button type="button" class="ar-primary review-submit">이 내용으로 확인 <span aria-hidden="true">→</span></button>
+    <p class="ar-demo">화면 시연용 · 실제 설계와 보드 연결은 준비 중</p>
+  </footer>
+</section>
+
 </div>
 </body>
 </html>

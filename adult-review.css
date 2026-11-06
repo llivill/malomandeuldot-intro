@@ -1,0 +1,40 @@
+#adult-clarify,#adult-review{color:#202d43}
+#adult-clarify *,#adult-review *{box-sizing:border-box}
+#adult-clarify .adult-back:focus-visible,#adult-review .adult-back:focus-visible,#adult-clarify button:focus-visible,#adult-review button:focus-visible,#adult-clarify .ar-option:has(input:focus-visible){outline:3px solid #91b2ef;outline-offset:3px}
+#adult-clarify .ar-main,#adult-review .ar-main{flex:1}
+#adult-clarify .ar-title,#adult-review .ar-title{margin:12px 0 22px}
+#adult-clarify .ar-title h1,#adult-review .ar-title h1{margin:0;color:#202f48;font-size:25px;line-height:1.35;font-weight:800;letter-spacing:-.055em;word-break:keep-all}
+#adult-clarify .ar-title p,#adult-review .ar-title p{margin:9px 0 0;color:#72839a;font-size:14px;line-height:1.5;letter-spacing:-.025em;word-break:keep-all}
+#adult-clarify .ar-idea-card{padding:15px 17px;border:1px solid #dce8f7;border-radius:15px;background:#eff6ff}
+#adult-clarify .ar-idea-card>span{display:block;color:#7391ba;font-size:12px;font-weight:700}
+#adult-clarify .ar-idea-card p{margin:7px 0 0;color:#304967;font-size:14px;font-weight:650;line-height:1.5;overflow-wrap:anywhere}
+#adult-clarify .ar-options{min-width:0;margin:24px 0 0;padding:0;border:0}
+#adult-clarify .ar-options legend{padding:0 0 10px;color:#34455d;font-size:14px;font-weight:750;letter-spacing:-.025em}
+#adult-clarify .ar-option{position:relative;display:flex;align-items:center;gap:12px;min-height:72px;margin:9px 0 0;padding:13px 15px;border:1px solid #e1e8f1;border-radius:15px;background:#fff;cursor:pointer;transition:border-color .16s,background .16s,box-shadow .16s}
+#adult-clarify .ar-option:has(input:checked){border-color:#5b86dd;background:#f6f9ff;box-shadow:0 0 0 1px #5b86dd}
+#adult-clarify .ar-option input{position:absolute;width:1px;height:1px;opacity:0}
+#adult-clarify .ar-radio{width:20px;height:20px;flex:0 0 20px;border:2px solid #cad6e4;border-radius:50%;background:#fff}
+#adult-clarify .ar-option input:checked+.ar-radio{border:6px solid #5b86dd}
+#adult-clarify .ar-option-copy{display:flex;min-width:0;flex-direction:column;gap:4px}
+#adult-clarify .ar-option-copy strong{color:#34465e;font-size:14px;font-weight:750;line-height:1.35}
+#adult-clarify .ar-option-copy small{color:#8594a8;font-size:12px;line-height:1.4;word-break:keep-all}
+#adult-clarify .ar-hint,#adult-review .ar-review-note{margin:15px 2px 0;color:#8797ab;font-size:12px;line-height:1.6;word-break:keep-all}
+#adult-review .ar-review-card{overflow:hidden;border:1px solid #e0e9f3;border-radius:19px;background:#fff;box-shadow:0 8px 22px #53769c0d}
+#adult-review .ar-review-top{display:flex;align-items:center;gap:10px;padding:18px 18px;background:#f1f6fe}
+#adult-review .ar-review-badge{flex:none;padding:6px 9px;border-radius:8px;background:#e3edfb;color:#527bb4;font-size:11px;font-weight:750}
+#adult-review .ar-review-top strong{min-width:0;color:#2d4564;font-size:15px;line-height:1.4;overflow-wrap:anywhere}
+#adult-review .ar-review-card dl{margin:0;padding:0 18px}
+#adult-review .ar-review-card dl div{padding:17px 0;border-bottom:1px solid #edf1f6}
+#adult-review .ar-review-card dl div:last-child{border-bottom:0}
+#adult-review .ar-review-card dt{color:#8b9bae;font-size:12px;font-weight:650}
+#adult-review .ar-review-card dd{margin:7px 0 0;color:#2f4058;font-size:14px;font-weight:700;line-height:1.5;overflow-wrap:anywhere}
+#adult-clarify .ar-footer,#adult-review .ar-footer{padding:16px 25px 26px;background:#fff}
+#adult-clarify .ar-primary,#adult-review .ar-primary{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:58px;padding:0 16px;border:0;border-radius:15px;background:#2864d8;color:#fff;font:inherit;font-size:15px;font-weight:750;letter-spacing:-.025em;cursor:pointer}
+#adult-clarify .ar-primary span,#adult-review .ar-primary span{font-size:20px}
+#adult-clarify .ar-primary:disabled{background:#e8edf4;color:#9aa9ba;cursor:not-allowed}
+#adult-clarify .ar-primary:not(:disabled):active,#adult-review .ar-primary:active{transform:translateY(2px)}
+#adult-clarify .ar-demo,#adult-review .ar-demo{margin:12px 0 0;color:#94a2b4;font-size:11px;line-height:1.4;text-align:center}
+#adult-review .ar-status{margin:0 0 12px;color:#4a6fa1;font-size:13px;line-height:1.5}
+#adult-review .ar-status:empty{display:none}
+@media(max-width:360px){#adult-clarify .ar-title h1,#adult-review .ar-title h1{font-size:23px}#adult-clarify .ar-footer,#adult-review .ar-footer{padding-left:20px;padding-right:20px}}
+@media(prefers-reduced-motion:reduce){#adult-clarify *,#adult-review *{transition:none!important}}
